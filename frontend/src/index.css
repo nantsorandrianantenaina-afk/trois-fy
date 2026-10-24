@@ -1,0 +1,1588 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  background: #f5f7fb;
+  color: #212529;
+}
+
+#root {
+  overflow: hidden;
+}
+
+/* =========================
+   APPLICATION
+========================= */
+
+.app-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.app-sidebar {
+  width: 250px;
+  min-width: 250px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-nav {
+  overflow: hidden;
+}
+
+/* =========================
+   ZONE PRINCIPALE
+========================= */
+
+.app-main {
+  min-width: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.app-header {
+  height: 70px;
+  min-height: 70px;
+}
+
+/* =========================
+   CONTENU
+========================= */
+
+.app-content {
+  height: calc(100vh - 70px);
+  overflow: hidden;
+  padding: 16px 20px;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dashboard-header {
+  min-height: 55px;
+  margin-bottom: 12px;
+}
+
+.dashboard-stats {
+  margin-bottom: 12px;
+}
+
+.dashboard-stat-body {
+  padding: 14px 16px;
+}
+
+.dashboard-bottom {
+  height: calc(100% - 185px);
+  min-height: 0;
+}
+
+.dashboard-bottom > div {
+  min-height: 0;
+}
+
+.dashboard-bottom .card {
+  min-height: 0;
+}
+
+.dashboard-empty {
+  padding: 30px 15px;
+}
+
+.dashboard-summary {
+  padding: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .app-sidebar {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .app-content {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-height: 800px) {
+  .app-header {
+    height: 64px;
+    min-height: 64px;
+  }
+
+  .app-content {
+    height: calc(100vh - 64px);
+    padding: 12px 16px;
+  }
+
+  .dashboard-header {
+    min-height: 48px;
+    margin-bottom: 10px;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-header p {
+    font-size: 0.85rem;
+  }
+
+  .dashboard-stat-body {
+    padding: 10px 14px;
+  }
+
+  .dashboard-stat-body h3 {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-stat-body h4 {
+    font-size: 1.2rem;
+  }
+
+  .dashboard-bottom {
+    height: calc(100% - 165px);
+  }
+
+  .dashboard-summary {
+    padding: 14px;
+  }
+}
+
+/* ============================================================
+   ESPACES - FORMULAIRE PROFESSIONNEL
+   ============================================================ */
+
+.espace-form-page {
+  width: 100%;
+}
+
+.espace-title-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #e8f0ff;
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.espace-section-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.espace-form-page .card {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.espace-form-page .card-header {
+  border-bottom: 1px solid #edf0f4 !important;
+}
+
+.espace-form-page .form-label {
+  font-size: 0.9rem;
+  color: #344054;
+  margin-bottom: 0.45rem;
+}
+
+.espace-form-page .form-control,
+.espace-form-page .input-group-text {
+  min-height: 42px;
+  border-color: #d9dee7;
+}
+
+.espace-form-page .form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.12);
+}
+
+.espace-form-page textarea.form-control {
+  min-height: 78px;
+  resize: none;
+}
+
+.espace-form-page .input-group-text {
+  color: #667085;
+  background: #f8fafc;
+}
+
+.espace-status-box {
+  min-height: 66px;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #fafbfc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.espace-status-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #e9f7ef;
+  color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.espace-form-page .form-switch .form-check-input {
+  width: 2.6em;
+  height: 1.35em;
+  cursor: pointer;
+}
+
+.espace-form-page .btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.espace-form-page .alert {
+  border-radius: 10px;
+}
+
+/* ============================================================
+   ESPACES - INTERFACE PROFESSIONNELLE
+   ============================================================ */
+
+.espace-page {
+  width: 100%;
+}
+
+/* ============================================================
+   EN-TÊTE
+   ============================================================ */
+
+.espace-page-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+
+  background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%);
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.25rem;
+
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.22);
+}
+
+.espace-gradient-button {
+  border: 0 !important;
+
+  background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%) !important;
+
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.espace-gradient-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 9px 22px rgba(13, 110, 253, 0.3);
+}
+
+/* ============================================================
+   STATISTIQUES
+   ============================================================ */
+
+.espace-stat-card {
+  position: relative;
+
+  min-height: 105px;
+
+  padding: 18px 20px;
+
+  border-radius: 15px;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 22px rgba(16, 24, 40, 0.1);
+}
+
+.espace-stat-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  right: -45px;
+  top: -55px;
+}
+
+.espace-stat-card small {
+  opacity: 0.88;
+  font-size: 0.82rem;
+}
+
+.espace-stat-card h3 {
+  margin: 4px 0 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.espace-stat-primary {
+  background: linear-gradient(135deg, #0d6efd, #4f46e5);
+}
+
+.espace-stat-success {
+  background: linear-gradient(135deg, #198754, #20c997);
+}
+
+.espace-stat-secondary {
+  background: linear-gradient(135deg, #64748b, #475569);
+}
+
+.espace-stat-icon {
+  width: 46px;
+  height: 46px;
+
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.17);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.25rem;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   FILTRES
+   ============================================================ */
+
+.espace-filter-card {
+  border-radius: 14px;
+}
+
+.espace-search {
+  height: 42px;
+
+  border: 1px solid #d9dee7;
+
+  border-radius: 9px;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.espace-search:focus-within {
+  border-color: #86b7fe;
+
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.espace-search > i {
+  color: #667085;
+  margin-right: 10px;
+}
+
+.espace-search input {
+  border: 0;
+  outline: 0;
+
+  flex: 1;
+
+  min-width: 0;
+
+  color: #344054;
+
+  background: transparent;
+}
+
+.espace-search input::placeholder {
+  color: #98a2b3;
+}
+
+.espace-search button {
+  border: 0;
+  background: transparent;
+
+  color: #98a2b3;
+
+  padding: 3px 5px;
+}
+
+.espace-search button:hover {
+  color: #344054;
+}
+
+.espace-filter-button {
+  border: 1px solid #d9dee7;
+
+  background: white;
+
+  color: #475467;
+
+  border-radius: 8px;
+
+  padding: 8px 14px;
+
+  font-size: 0.86rem;
+
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.espace-filter-button:hover {
+  background: #f8fafc;
+}
+
+.espace-filter-button.active {
+  color: white;
+  border-color: transparent;
+
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+.espace-filter-button.active-success {
+  color: white;
+  border-color: transparent;
+
+  background: linear-gradient(135deg, #198754, #20c997);
+}
+
+.espace-filter-button.active-secondary {
+  color: white;
+  border-color: transparent;
+
+  background: linear-gradient(135deg, #64748b, #475569);
+}
+
+/* ============================================================
+   LISTE
+   ============================================================ */
+
+.espace-list-card {
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+.espace-table {
+  font-size: 0.9rem;
+}
+
+.espace-table thead th {
+  background: #f8fafc;
+
+  color: #667085;
+
+  font-size: 0.76rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.04em;
+
+  font-weight: 700;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #eaecf0;
+}
+
+.espace-table tbody td {
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  border-color: #f0f2f5;
+}
+
+.espace-table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.espace-table tbody tr:hover {
+  background: #f8faff;
+}
+
+.espace-avatar {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  color: white;
+
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 12px;
+
+  box-shadow: 0 5px 12px rgba(13, 110, 253, 0.18);
+}
+
+.table-icon {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 8px;
+
+  background: #f1f5f9;
+
+  color: #64748b;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 8px;
+}
+
+/* ============================================================
+   STATUT
+   ============================================================ */
+
+.espace-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 5px 10px;
+
+  border-radius: 999px;
+
+  font-size: 0.78rem;
+
+  font-weight: 600;
+}
+
+.espace-status span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+}
+
+.espace-status.active {
+  color: #087443;
+
+  background: #e8f7ef;
+}
+
+.espace-status.active span {
+  background: #12b76a;
+}
+
+.espace-status.inactive {
+  color: #475467;
+
+  background: #f2f4f7;
+}
+
+.espace-status.inactive span {
+  background: #98a2b3;
+}
+
+/* ============================================================
+   ACTIONS
+   ============================================================ */
+
+.espace-action {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 8px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid transparent;
+
+  background: white;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.espace-action:hover {
+  transform: translateY(-1px);
+}
+
+.espace-action.edit {
+  color: #0d6efd;
+
+  border-color: #b9d3ff;
+}
+
+.espace-action.edit:hover {
+  color: white;
+
+  border-color: transparent;
+
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+
+  box-shadow: 0 5px 12px rgba(13, 110, 253, 0.2);
+}
+
+.espace-action.delete {
+  color: #dc3545;
+
+  border-color: #f1b5bb;
+}
+
+.espace-action.delete:hover {
+  color: white;
+
+  border-color: transparent;
+
+  background: linear-gradient(135deg, #dc3545, #e85d75);
+
+  box-shadow: 0 5px 12px rgba(220, 53, 69, 0.18);
+}
+
+.espace-action:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ============================================================
+   ÉTAT VIDE
+   ============================================================ */
+
+.espace-empty-state {
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 35px 20px;
+}
+
+.espace-empty-icon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  background: linear-gradient(135deg, #0d6efd, #6f42c1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.7rem;
+
+  margin-bottom: 15px;
+
+  box-shadow: 0 9px 24px rgba(13, 110, 253, 0.2);
+}
+
+/* ============================================================
+   CHARGEMENT MODIFICATION
+   ============================================================ */
+
+.espace-edit-loading {
+  min-height: 420px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 992px) {
+  .espace-filter-button {
+    flex: 1;
+  }
+
+  .espace-table {
+    min-width: 950px;
+  }
+}
+
+@media (max-width: 576px) {
+  .espace-page-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .espace-stat-card {
+    min-height: 90px;
+  }
+
+  .espace-gradient-button {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* ============================================================
+   RESERVATIONS - INTERFACE PROFESSIONNELLE
+   ============================================================ */
+
+.reservation-page {
+  width: 100%;
+}
+
+.reservation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+
+.reservation-title-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.reservation-page-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 22px;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.22);
+}
+
+.reservation-title-area h2 {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: -0.4px;
+}
+
+.reservation-title-area p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.reservation-gradient-button {
+  border: none;
+  color: white;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 18px;
+
+  border-radius: 11px;
+
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reservation-gradient-button:hover {
+  color: white;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.3);
+}
+
+/* ============================================================
+   STATISTIQUES
+   ============================================================ */
+
+.reservation-stat-card {
+  position: relative;
+
+  min-height: 128px;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+
+  border: 1px solid rgba(226, 232, 240, 0.8);
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reservation-stat-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.1);
+}
+
+.reservation-stat-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 90px;
+  height: 90px;
+
+  right: -35px;
+  bottom: -40px;
+
+  border-radius: 50%;
+
+  opacity: 0.08;
+}
+
+.reservation-stat-card span {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  margin-bottom: 6px;
+}
+
+.reservation-stat-card strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  margin-bottom: 7px;
+}
+
+.reservation-stat-card small {
+  color: #94a3b8;
+
+  font-size: 11px;
+}
+
+.reservation-stat-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.stat-blue {
+  border-left: 4px solid #2563eb;
+}
+
+.stat-blue .reservation-stat-icon {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.stat-orange {
+  border-left: 4px solid #f59e0b;
+}
+
+.stat-orange .reservation-stat-icon {
+  color: #f59e0b;
+  background: #fffbeb;
+}
+
+.stat-green {
+  border-left: 4px solid #16a34a;
+}
+
+.stat-green .reservation-stat-icon {
+  color: #16a34a;
+  background: #f0fdf4;
+}
+
+.stat-red {
+  border-left: 4px solid #dc2626;
+}
+
+.stat-red .reservation-stat-icon {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+/* ============================================================
+   FILTRES
+   ============================================================ */
+
+.reservation-filter-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 15px;
+
+  margin-bottom: 18px;
+
+  border-radius: 16px;
+
+  background: white;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.reservation-search {
+  flex: 1;
+
+  min-width: 260px;
+
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 11px;
+
+  background: #f8fafc;
+
+  padding: 0 12px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.reservation-search:focus-within {
+  border-color: #6366f1;
+
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+
+  background: white;
+}
+
+.reservation-search > i {
+  color: #94a3b8;
+
+  margin-right: 9px;
+}
+
+.reservation-search input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #0f172a;
+
+  font-size: 14px;
+}
+
+.reservation-search input::placeholder {
+  color: #94a3b8;
+}
+
+.reservation-search button {
+  border: none;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  cursor: pointer;
+}
+
+.reservation-filters {
+  display: flex;
+
+  gap: 6px;
+
+  flex-wrap: wrap;
+}
+
+.reservation-filters button {
+  border: 1px solid #e2e8f0;
+
+  background: white;
+
+  color: #64748b;
+
+  padding: 8px 12px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition: all 0.2s ease;
+}
+
+.reservation-filters button:hover {
+  border-color: #cbd5e1;
+
+  background: #f8fafc;
+}
+
+.reservation-filters button.active {
+  color: white;
+
+  border-color: transparent;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.reservation-filters button.active.pending {
+  background: #f59e0b;
+}
+
+.reservation-filters button.active.confirmed {
+  background: #16a34a;
+}
+
+.reservation-filters button.active.cancelled {
+  background: #dc2626;
+}
+
+.reservation-filters button.active.finished {
+  background: #6366f1;
+}
+
+/* ============================================================
+   LISTE
+   ============================================================ */
+
+.reservation-list-card {
+  overflow: hidden;
+
+  background: white;
+
+  border-radius: 18px;
+
+  border: 1px solid #e2e8f0;
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.reservation-list-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 18px 20px;
+
+  border-bottom: 1px solid #eef2f7;
+}
+
+.reservation-list-header h5 {
+  margin: 0 0 3px;
+
+  color: #0f172a;
+
+  font-weight: 700;
+}
+
+.reservation-list-header span {
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+.reservation-refresh {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  border: 1px solid #e2e8f0;
+
+  background: white;
+
+  color: #475569;
+
+  padding: 7px 11px;
+
+  border-radius: 9px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.reservation-refresh:hover {
+  background: #f8fafc;
+}
+
+/* ============================================================
+   TABLEAU
+   ============================================================ */
+
+.reservation-table {
+  margin: 0;
+}
+
+.reservation-table thead th {
+  background: #f8fafc;
+
+  color: #64748b;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  padding: 13px 10px;
+
+  font-size: 11px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.04em;
+
+  white-space: nowrap;
+}
+
+.reservation-table tbody td {
+  padding: 14px 10px;
+
+  border-bottom: 1px solid #f1f5f9;
+
+  color: #334155;
+
+  font-size: 13px;
+}
+
+.reservation-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.reservation-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* ============================================================
+   CLIENT
+   ============================================================ */
+
+.reservation-client {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.reservation-client-avatar {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+.reservation-client strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 13px;
+}
+
+.reservation-client small {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  margin-top: 2px;
+}
+
+/* ============================================================
+   ESPACE
+   ============================================================ */
+
+.reservation-space {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.reservation-space i {
+  color: #6366f1;
+}
+
+.reservation-space span {
+  font-weight: 500;
+}
+
+/* ============================================================
+   ÉVÉNEMENT
+   ============================================================ */
+
+.event-type-badge {
+  display: inline-flex;
+
+  padding: 5px 9px;
+
+  border-radius: 8px;
+
+  color: #5b21b6;
+
+  background: #f5f3ff;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+/* ============================================================
+   DATE
+   ============================================================ */
+
+.reservation-date strong {
+  display: block;
+
+  color: #334155;
+
+  font-size: 12px;
+}
+
+.reservation-date small {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  margin-top: 2px;
+}
+
+/* ============================================================
+   PERSONNES
+   ============================================================ */
+
+.people-count {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  font-weight: 600;
+}
+
+.people-count i {
+  color: #64748b;
+}
+
+/* ============================================================
+   PRIX
+   ============================================================ */
+
+.reservation-price {
+  color: #0f172a;
+
+  white-space: nowrap;
+}
+
+/* ============================================================
+   STATUT
+   ============================================================ */
+
+.reservation-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.reservation-status > span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: currentColor;
+}
+
+.reservation-status.pending {
+  color: #b45309;
+  background: #fffbeb;
+}
+
+.reservation-status.confirmed {
+  color: #15803d;
+  background: #f0fdf4;
+}
+
+.reservation-status.cancelled {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+.reservation-status.finished {
+  color: #4338ca;
+  background: #eef2ff;
+}
+
+/* ============================================================
+   ACTION
+   ============================================================ */
+
+.reservation-action-button {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 9px;
+
+  border: 1px solid #e2e8f0;
+
+  background: white;
+
+  color: #475569;
+
+  transition: all 0.2s ease;
+}
+
+.reservation-action-button:hover {
+  color: white;
+
+  border-color: #6366f1;
+
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+/* ============================================================
+   ÉTAT VIDE
+   ============================================================ */
+
+.reservation-empty {
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 40px;
+}
+
+.reservation-empty p {
+  color: #94a3b8;
+
+  margin-bottom: 18px;
+}
+
+.reservation-empty-icon {
+  width: 70px;
+  height: 70px;
+
+  margin-bottom: 15px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6366f1;
+
+  background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+
+  font-size: 28px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1100px) {
+  .reservation-filter-card {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .reservation-search {
+    width: 100%;
+  }
+
+  .reservation-filters {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservation-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .reservation-gradient-button {
+    width: 100%;
+  }
+
+  .reservation-title-area h2 {
+    font-size: 22px;
+  }
+
+  .reservation-stat-card {
+    min-height: 110px;
+  }
+}
